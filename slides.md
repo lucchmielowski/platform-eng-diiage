@@ -746,31 +746,6 @@ La plupart des désaccords qui dégénèrent viennent d'une décision bien prise
 
 <p class="eyebrow">Attentes</p>
 
-## Venir me voir
-
-<div class="trio">
-  <div class="quad-card">
-    <h4>Vos décisions</h4>
-    <p><strong>Avec vous :</strong> vos décisions de plateforme.<br><strong>Pas moi :</strong> choisir vos outils.</p>
-  </div>
-  <div class="quad-card">
-    <h4>Le signal manqué</h4>
-    <p><strong>Avec vous :</strong> une décision dure traitée comme réversible.<br><strong>Pas moi :</strong> débugger votre cluster.</p>
-  </div>
-  <div class="quad-card">
-    <h4>« Est-ce une impasse ? »</h4>
-    <p><strong>Avec vous :</strong> vous dire si oui, et pourquoi.<br><strong>Pas moi :</strong> valider votre conception.</p>
-  </div>
-</div>
-
-<!--
-Si venir me voir coûte plus cher que rester bloqué, vous resterez bloqués, et ce sera mon problème de conception, pas votre indiscipline.
--->
-
----
-
-<p class="eyebrow">Attentes</p>
-
 ## Kubernetes on-premise : la seule contrainte
 
 - Élasticité illimitée → somme fixe
@@ -928,6 +903,35 @@ Ce basculement vers l'état d'esprit produit est reconnu comme le principe centr
 
 <!--
 Pourquoi une organisation paie des gens à ne pas livrer de fonctionnalité client ? Une équipe produit a une capacité de raisonnement finie : domaine métier, base, pipeline, réseau, secrets, build, alerting. Tenir les sept, c'est n'en tenir aucun bien.
+-->
+
+---
+
+<p class="eyebrow">Platform Engineering</p>
+
+## « Avec l'IA, chacun code ce dont il a besoin »
+
+- Générer un pipeline sur mesure prend une heure. Le faire tourner trois ans, non.
+
+<div class="trio">
+  <div class="quad-card">
+    <h4>Ce que l'IA accélère</h4>
+    <p>Écrire : pipeline, dashboard, scaffolding d'API. Le temps de construction s'effondre.</p>
+  </div>
+  <div class="quad-card">
+    <h4>Ce qu'elle ne retire pas</h4>
+    <p>Tenir en prod : patch de sécurité, dérive de configuration, l'incident à 3h sur un outil que personne d'autre ne comprend.</p>
+  </div>
+  <div class="quad-card">
+    <h4>Ce qu'elle aggrave</h4>
+    <p>Chaque équipe génère sa propre variante. La duplication du slide précédent, produite plus vite, par des équipes qui ne se parlent pas plus qu'avant.</p>
+  </div>
+</div>
+
+- La plateforme n'est plus en concurrence avec « je le code moi-même ». Elle décide quelle part de ce que l'IA génère devient un chemin partagé, plutôt qu'un artefact que son auteur est seul à savoir faire tourner.
+
+<!--
+L'objection mérite d'être prise au sérieux, pas balayée. Elle a raison sur un point : le coût de construction s'effondre. Elle a tort de s'arrêter là. La loi de Conway (slide « La loi de Conway ») ne se négocie pas avec un modèle de langage : des équipes qui ne se parlent pas produisent N variantes du même pipeline, pas une intégration. Et la charge cognitive qui suit ne disparaît pas parce que le code a été généré au lieu d'être tapé à la main — elle se déplace vers celui qui doit comprendre, trois ans plus tard, ce qu'un modèle a produit sans jamais expliciter pourquoi.
 -->
 
 ---

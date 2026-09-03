@@ -41,6 +41,16 @@ Pas un chiffre sur un dashboard. Le silence des sollicitations manuelles.
 
 ---
 
+## Pourquoi ça compte encore, à l'ère de l'IA
+
+Générer du code sur mesure n'a jamais été aussi rapide. Un développeur peut aujourd'hui produire seul, en une session de travail, ce qui prenait une équipe : un pipeline, un tableau de bord, le scaffolding d'une API.
+
+Ça ne change rien à ce que ce manifeste protège. L'IA réduit le coût de construire ; elle ne réduit pas le coût de tenir en production, patcher, sécuriser, comprendre trois ans plus tard ce qu'une autre équipe a généré sans jamais documenter pourquoi. La loi de Conway (principe 7) ne se négocie pas avec un modèle de langage : des équipes qui ne se parlent pas produiront N variantes du même problème, plus vite qu'avant, pas moins.
+
+Une plateforme n'est plus en concurrence avec « je peux le coder moi-même ». Elle décide quelle part de ce que chacun peut désormais générer devient un chemin partagé, maintenu et compris — plutôt qu'un énième artefact que son auteur est seul à savoir faire fonctionner.
+
+---
+
 ## Ce que ce manifeste ne dit pas
 
 Il ne dit pas quels outils utiliser — c'est votre décision, à défendre par ADR.
